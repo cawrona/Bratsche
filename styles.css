@@ -1,0 +1,224 @@
+/* playfair-display-sc-regular - latin */
+@font-face {
+    font-family: 'Playfair Display SC';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local(''),
+         url('./fonts/playfair-display-sc-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./fonts/playfair-display-sc-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* pt-serif-regular - latin */
+@font-face {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local(''),
+         url('../fonts/pt-serif-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/pt-serif-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+.hiddenup {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 2s;
+}
+
+.hiddenright {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.hiddenleft {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+svg.arrow {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    fill: white;
+    width: 3rem;
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 5px;
+    transition: 300ms ease;
+}
+
+svg.arrow:hover {
+    fill: black;
+    background-color: #fff;
+    transition: 300ms ease;
+}
+
+#landing {
+    position: relative;
+    background-image: url("./img/bratsche.webp");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    color: white;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.title {
+    font-size: clamp(3rem, 8vw, 8rem);
+    font-weight: 400;
+    font-family: 'Playfair Display SC';
+    text-shadow: #fff 1px 0 10px;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+}
+
+div#more {
+    height: 100vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+p.first {
+    color: white;
+    font-family: 'PT Serif';
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+div.second {
+    height: 100vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 1rem;
+}
+
+p.second {
+    text-align: right;
+    color: white;
+    font-family: 'PT Serif';
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+div.team {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    padding: 1rem;
+    background: black;
+    color: white;
+    font-family: 'PT Serif';
+    font-weight: 400;
+    min-height: 100vh;
+}
+
+h1.team {
+    padding: 1rem;
+}
+
+div.violist {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img.team {
+    padding: 1rem;
+    border-radius: 100%;
+    width: 150px;
+    height: auto;
+    max-width: 25vw;
+}
+
+p.team {
+    padding: 1rem;
+}
+
+div.work {
+    padding: 1rem;
+    background: black;
+    color: white;
+    font-family: 'PT Serif';
+    font-weight: 400;
+    min-height: 100vh;
+
+}
+
+h1.work {
+    padding: 1rem;
+    text-align: end;
+}
+
+p.work {
+    padding: 3rem;
+    text-align: center;
+}
+
+div.contact {
+    padding: 1rem;
+    background: black;
+    color: white;
+    font-family: 'PT Serif';
+    font-weight: 400;
+    min-height: 60vh;
+
+}
+
+h1.contact {
+    padding: 1rem;
+}
+
+p.contact {
+    padding: 3rem;
+    text-align: center;
+}
+
+a:link {
+    color: white;
+}
+
+
+
+
+
+
+
+
