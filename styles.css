@@ -20,11 +20,22 @@
          url('../fonts/pt-serif-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
+a.music {
+    color: #fff;
+    transition: all 1s;
+}
+
+a.music:hover {
+    color: rgb(227, 189, 251);
+    transition: all 1s;
+}
+
 .hiddenup {
     opacity: 0;
     filter: blur(5px);
     transform: translateY(100%);
     transition: all 2s;
+    transition-delay: 500ms;
 }
 
 .hiddenright {
@@ -32,6 +43,7 @@
     filter: blur(5px);
     transform: translateX(-100%);
     transition: all 2s;
+    transition-delay: 500ms;
 }
 
 .hiddenleft {
@@ -39,6 +51,7 @@
     filter: blur(5px);
     transform: translateX(-100%);
     transition: all 2s;
+    transition-delay: 500ms;
 }
 
 .show {
@@ -106,7 +119,9 @@ div#more {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    /* padding: 1rem; */
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 p.first {
@@ -115,7 +130,7 @@ p.first {
     font-weight: 400;
     font-size: 1.5rem;
     padding: 1rem;
-    text-align: center;
+    /* text-align: center; */
 }
 
 div.second {
@@ -125,11 +140,13 @@ div.second {
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    padding: 1rem;
+    /* padding: 1rem; */
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 p.second {
-    text-align: center;
+    /* text-align: center; */
     color: white;
     font-family: 'PT Serif';
     font-weight: 400;
@@ -242,6 +259,12 @@ svg.hub {
     fill: white;
     width: 30px;
     padding: 15px;
+    transition: all 1s;
+}
+
+svg.hub:hover {
+    fill: rgb(227, 189, 251);
+    transition: all 1s;
 }
 
 
