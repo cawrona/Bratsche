@@ -189,7 +189,7 @@ h1.work {
 }
 
 p.work {
-    padding: 3rem;
+    padding-top: 30%;
     text-align: center;
 }
 
@@ -208,16 +208,15 @@ h1.contact {
 }
 
 p.contact {
-    padding: 3rem;
+    padding-top: 30%;
+    padding-bottom: 30%;
+    padding-left: 3rem;
+    padding-right: 3rem;
     text-align: center;
 }
 
 a:link {
     color: white;
-}
-
-#padding {
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -232,6 +231,18 @@ a:link {
     background: linear-gradient(rgba(0,0,0,0), 70%, black);
 }
 
+div.hub {
+    background: black;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+svg.hub {
+    fill: white;
+    width: 30px;
+    padding: 15px;
+}
 
 
 
